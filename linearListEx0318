@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+	
+
+	int sale[4] = { 10,20,30,40 };
+	int other[4] = { 100,200,300,400 };
+	//sale = other; //배열명은 주소(포인터)상수이므로
+	//for (int i = 0; i < 4; ++i)
+	for (int i = 0; i < sizeof(sale) / sizeof(int); ++i)
+
+	{
+		printf("sale[%d]=%p\n", i, &sale[i]);
+	}
+
+	char* ps = "apple";
+	printf("ps=%s\n", ps);
+	*ps = 'A';
+	printf("After ps=%s\n", ps);
+
+	return 0;
+
+}
