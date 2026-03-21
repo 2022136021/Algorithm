@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<windows.h>
+
+int main()
+{
+	SetConsoleOutputCP(65001); // UTF-8, CP는 Code Page
+	SetConsoleCP(65001); // 입력도 필요하면 설정
+
+	int a = 7; // =  : assignment operator
+	printf("a=%d\n", a);
+	printf("Address of a=%d \n", &a);
+	printf("주소 of a=%p \n", &a);
+	printf("주소 of a=%X \n", &a);
+
+	//int* p = 0; // 아직은 아무데도 가리키지 마라
+	//p = &a;
+	int* p = 0;
+	printf("p주소=%p\n", p);
+
+	int** p2 = 0;
+	p2 = &p;
+	printf("p의 start Address=%p\n", &p);
+	printf("p2가 저장주소=%p\n", p2);
+
+	int*** p3 = &p2;
+	printf("p2의 시작주소=%p\n", &p2);
+	printf("p3가 저장한주소=%p\n", p3);
+
+	printf("*p=%d\n", *p);
+	printf("**p2=%d\n", **p2);
+	printf("***p3=%d\n", ***p3);
+
+	int b = 5;
+	int* pb = &b;
+	printf("b=%d, *pb=%d\n", b, *pb);
+
+	*p = *pb; // a = 5 ;
+	printf("a=%d, ***p3=%d\n", a, ***p3);
+
+	return 0;
+}
