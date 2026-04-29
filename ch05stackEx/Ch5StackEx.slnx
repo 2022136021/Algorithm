@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Ch5StackEx/Ch5StackEx.vcxproj" Id="866e1d94-5b17-4ec7-807e-3049b3923a4c" />
+  <Project Path="Ch5_2_StackByLinkedList/Ch5_2_StackByLinkedList.vcxproj" Id="bf33ec58-f0d2-4109-a14b-ae02a0a80e2e" />
+  <Project Path="Ch5_3_ParenthesisByStack/Ch5_3_ParenthesisByStack.vcxproj" Id="9d3f588f-a04d-4397-a9f2-e23bdb3cab60" />
+</Solution>
